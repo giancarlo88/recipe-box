@@ -3,12 +3,23 @@ import styled from 'styled-components'
 
 
 const Header = styled.header`
+align-items: center;
 background-color: rgba(125, 30, 50, .5);
-color: green;
+display: flex;
+height: 75px;
+justify-content: center;
+text-align: center;
+`
+
+const HeaderTitle = styled.h1`
+font-family: 'Montserrat';
+font-size: 36px;
 `
 
 export default () => (
   <Header>
-    <h1 className="App-title">Welcome to React</h1>
+    <HeaderTitle>The Recipe Box</HeaderTitle>
   </Header>
 )
+
+

@@ -23,5 +23,9 @@ if (!process.env.CI && argv.indexOf('--coverage') < 0) {
   argv.push('--watch');
 }
 
+const Enzyme = require('enzyme')
+const Adapter = require('enzyme-adapter-react-16')
+
+Enzyme.configure({adapter: new Adapter()})
 
 jest.run(argv);
