@@ -18,7 +18,7 @@ font-size: 36px;
 
 export default () => (
   <Header>
-    <HeaderTitle>The Recipe Box</HeaderTitle>
+    <HeaderTitle>Recipes</HeaderTitle>
   </Header>
 )
 

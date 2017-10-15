@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Mock Recipe 1",
+    "servings": 4,
+    "ingredients": [
+      {
+        "quantity": "2",
+        "unit": "cup",
+        "ingredient": "flour"
+      },
+      {
+        "quantity": "2",
+        "unit": "tbsp",
+        "ingredient": "sugar"
+      }
+    ],
+    "description": "This is a mock recipe used for testing",
+    "notes": "Here are some notes that can be edited maybe I don't know"
+  },
+  {
+    "title": "Mock Recipe 2",
+    "servings": 2,
+    "ingredients": [
+      {
+        "quantity": "2",
+        "unit": "tsp",
+        "ingredient": "chicken stock"
+      },
+      {
+        "quantity": "300",
+        "unit": "mL",
+        "ingredient": "water"
+      }
+    ],
+    "description": "This is a second mock recipe used for testing",
+    "notes": "This recipe is terrible"
+  }
+]
