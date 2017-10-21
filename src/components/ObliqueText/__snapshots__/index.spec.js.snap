@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ObliqueText /> should match a snapshot 1`] = `
+<p
+  className="sc-bdVaJa hCJUJ"
+>
+  Here is some oblique text
+</p>
+`;

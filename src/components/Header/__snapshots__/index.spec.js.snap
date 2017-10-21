@@ -2,12 +2,12 @@
 
 exports[`Header should match a snapshot 1`] = `
 <header
-  className="sc-bdVaJa fnBrTn"
+  className="sc-bdVaJa oMxSe"
 >
   <h1
-    className="sc-bwzfXH fjElaO"
+    className="sc-bwzfXH kPEUNq"
   >
-    Recipes
+    Header
   </h1>
 </header>
 `;
