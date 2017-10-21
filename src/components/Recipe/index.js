@@ -5,7 +5,6 @@ import Accordion from '../../animations/Accordion'
 import ObliqueText from '../ObliqueText'
 import RecipeTitle from '../RecipeTitle'
 
-
 const StyledRecipe = styled.div`
   background-color: #247ba0;
   color: #c9daea;
