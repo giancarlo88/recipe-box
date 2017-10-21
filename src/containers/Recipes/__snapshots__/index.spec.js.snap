@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Recipes /> should match a snapshot 1`] = `
+<div
+  className="sc-htpNat jdaKho"
+  onClick={[Function]}
+>
+  <h2
+    className="sc-bwzfXH cIKGFn"
+  >
+    Test recipe 1
+  </h2>
+  <p
+    className="sc-bdVaJa hCJUJ"
+  >
+    Serves 4
+  </p>
+  <ul>
+    <li>
+      1
+       
+      cup
+       
+      flour
+    </li>
+  </ul>
+  <br />
+  <p>
+    A test recipe
+  </p>
+</div>
+`;

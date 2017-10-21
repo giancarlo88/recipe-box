@@ -16,6 +16,7 @@
     "dotenv": "4.0.0",
     "enzyme": "^3.1.0",
     "enzyme-adapter-react-16": "^1.0.1",
+    "enzyme-to-json": "^3.1.4",
     "eslint": "4.4.1",
     "eslint-config-react-app": "^2.0.1",
     "eslint-loader": "1.9.0",
@@ -83,7 +84,9 @@
       "web.jsx",
       "jsx",
       "node"
-    ]
+    ],
+    "snapshotSerializers": ["enzyme-to-json/serializer"]
+
   },
   "babel": {
     "presets": [
