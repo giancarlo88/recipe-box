@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Recipe /> should match snapshot when there are no recipes passed from props 1`] = `
+<div
+  className="sc-bdVaJa dqtepa"
+  onClick={[Function]}
+>
+  <h2
+    className="sc-htpNat hnCWaW"
+  >
+    
+  </h2>
+  <p
+    className="sc-bwzfXH cJzebA"
+  >
+    Serves 
+    0
+  </p>
+  <ul />
+  <br />
+  <p>
+    
+  </p>
+</div>
+`;
+
+exports[`<Recipe /> should match snapshot when there is a recipe passed from props 1`] = `
+<div
+  className="sc-bdVaJa dqtepa"
+  onClick={[Function]}
+>
+  <h2
+    className="sc-htpNat hnCWaW"
+  >
+    
+  </h2>
+  <p
+    className="sc-bwzfXH cJzebA"
+  >
+    Serves 
+    0
+  </p>
+  <ul />
+  <br />
+  <p>
+    
+  </p>
+</div>
+`;

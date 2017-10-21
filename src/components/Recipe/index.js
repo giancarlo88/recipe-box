@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const Recipe = styled.div`
+const StyledRecipe = styled.div`
   background-color: #247ba0;
   color: #C9DAEA;
   height: ${(props) => (props.isSelected ? '400px' : '200px')};
@@ -20,8 +20,9 @@ const Title = styled.h2`
   font-size: 1.5em;
   padding: 15px 0;
 `
-export default ({ handleClick, isSelected, recipe = {}, index }) => (
-  <Recipe isSelected={isSelected} onClick={() => handleClick(index)}>
+
+const Recipe = ({ handleClick, isSelected, recipe, index}) => (
+  <StyledRecipe isSelected={isSelected} onClick={() => handleClick(index)}>
     <Title>{recipe.title}</Title>
     <ObliqueText>Serves {recipe.servings}</ObliqueText>
     <ul>
@@ -33,5 +34,16 @@ export default ({ handleClick, isSelected, recipe = {}, index }) => (
     </ul>
     <br />
     <p>{recipe.description}</p>
-  </Recipe>
+  </StyledRecipe>
 )
+
+Recipe.defaultProps = {
+  recipe: {
+    title: '',
+    servings: 0,
+    ingredients: [],
+    description: ''
+  }
+}
+
+export default Recipe
