@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-import Recipe from '../../components/Recipe/Recipe'
+import Recipe from '../../components/Recipe'
 
 export default class Recipes extends Component {
   constructor() {

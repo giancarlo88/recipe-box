@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
-import Header from '../../components/Header/Header'
-import Recipes from '../../containers/Recipes/Recipes';
+import Header from '../../components/Header'
+import Recipes from '../../containers/Recipes';
 
 export default class App extends Component {
   render() {
