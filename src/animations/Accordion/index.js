@@ -2,14 +2,14 @@ import React from 'react'
 import { Motion, spring } from 'react-motion'
 
 const Accordion = (Component, initialHeight) =>
-  class Accordion extends React.Component {
+  class AccordionComponent extends React.Component {
     constructor(props) {
       super(props)
       this.height = initialHeight
     }
 
     componentDidMount() {
-      this.height = this.element.scrollHeight
+      this.height = this.element ? this.element.scrollHeight : 0
     }
 
     render() {

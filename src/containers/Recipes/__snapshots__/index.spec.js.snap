@@ -2,31 +2,44 @@
 
 exports[`<Recipes /> should match a snapshot 1`] = `
 <div
-  className="sc-htpNat jdaKho"
-  onClick={[Function]}
+  style={
+    Object {
+      "height": 95,
+      "overflow": "hidden",
+    }
+  }
 >
-  <h2
-    className="sc-bwzfXH cIKGFn"
+  <div
+    className="sc-htpNat evXeYf"
+    onClick={[Function]}
   >
-    Test recipe 1
-  </h2>
-  <p
-    className="sc-bdVaJa hCJUJ"
-  >
-    Serves 4
-  </p>
-  <ul>
-    <li>
-      1
-       
-      cup
-       
-      flour
-    </li>
-  </ul>
-  <br />
-  <p>
-    A test recipe
-  </p>
+    <h2
+      className="sc-bwzfXH cIKGFn"
+    >
+      Test recipe 1
+    </h2>
+    <p
+      className="sc-bdVaJa hCJUJ"
+    >
+      Serves 4
+    </p>
+    <ul>
+      <li>
+        1
+         
+        cup
+         
+        flour
+      </li>
+    </ul>
+    <br />
+    <p>
+      A test recipe
+    </p>
+    <br />
+    <p>
+      It tastes like Mocha.
+    </p>
+  </div>
 </div>
 `;

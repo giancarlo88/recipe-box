@@ -52,7 +52,7 @@ describe('<Recipes />', () => {
   it('should update the isSelected index when one of the recipes are clicked', async () => {
     const component = await mockRender()
     expect(component.state().selectedRecipe).toBe(null)
-    const child = component.find(Recipe)
+    const child = component.find('div').at(1)
     child.simulate('click')
     expect(component.state().selectedRecipe).toBe(0)
     expect(component.find(Recipe).props().isSelected).toBe(true)

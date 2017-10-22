@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Accordion /> HOC should match snapshot 1`] = `
+<AccordionComponent>
+  <Motion
+    defaultStyle={
+      Object {
+        "x": undefined,
+      }
+    }
+    style={
+      Object {
+        "x": Object {
+          "damping": 26,
+          "precision": 0.01,
+          "stiffness": 170,
+          "val": 95,
+        },
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "height": undefined,
+          "overflow": "hidden",
+        }
+      }
+    >
+      <MockComponent>
+        <div
+          className="mock"
+        >
+          Mock
+        </div>
+      </MockComponent>
+    </div>
+  </Motion>
+</AccordionComponent>
+`;

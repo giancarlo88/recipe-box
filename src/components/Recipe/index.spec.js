@@ -6,7 +6,13 @@ import { mount } from 'enzyme'
 import RecipeTitle from '../RecipeTitle'
 import ObliqueText from '../ObliqueText'
 
-
+const mockDomNode = (elem) => {
+  if (elem === 'div') {
+    return {
+      scrollHeight: 1234
+    }
+  }
+}
 
 describe('<Recipe />', () => {
   const title = 'Test recipe'
@@ -30,7 +36,7 @@ describe('<Recipe />', () => {
     const props = {
       recipe
     }
-    const tree = create(<Recipe {...props} />)
+    const tree = create(<Recipe {...props} />, { mockDomNode })
     expect(tree).toMatchSnapshot()
   })
 
