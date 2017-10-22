@@ -12,25 +12,22 @@ const StyledRecipe = styled.div`
   transition: height .2s ease-in;
   overflow: hidden;
 `
-
 const Recipe = ({ handleClick, isSelected, recipe, index }) => (
-  <Accordion initialHeight={95} isSelected={isSelected}>
-    <StyledRecipe onClick={() => handleClick(index)}>
-      <RecipeTitle text={recipe.title} />
-      <ObliqueText text={`Serves ${recipe.servings}`} />
-      <ul>
-        {recipe.ingredients.map((ingredient, ingredientIndex) => (
-          <li key={ingredientIndex}>
-            {ingredient.quantity} {ingredient.unit} {ingredient.ingredient}
-          </li>
-        ))}
-      </ul>
-      <br />
-      <p>{recipe.description}</p>
-      <br />
-      <p>{recipe.notes}</p>
-    </StyledRecipe>
-  </Accordion>
+  <StyledRecipe onClick={() => handleClick(index)}>
+    <RecipeTitle text={recipe.title} />
+    <ObliqueText text={`Serves ${recipe.servings}`} />
+    <ul>
+      {recipe.ingredients.map((ingredient, ingredientIndex) => (
+        <li key={ingredientIndex}>
+          {ingredient.quantity} {ingredient.unit} {ingredient.ingredient}
+        </li>
+      ))}
+    </ul>
+    <br />
+    <p>{recipe.description}</p>
+    <br />
+    <p>{recipe.notes}</p>
+  </StyledRecipe>
 )
 
 Recipe.defaultProps = {
@@ -42,4 +39,4 @@ Recipe.defaultProps = {
   }
 }
 
-export default Recipe
+export default Accordion(Recipe, 95)
